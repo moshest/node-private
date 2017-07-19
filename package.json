@@ -1,0 +1,41 @@
+{
+  "name": "private",
+  "private": true,
+  "version": "0.1.0",
+  "description": "This is a private project",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "lint-staged && npm test",
+    "test": "./node_modules/.bin/mocha"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.json": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "author": "Moshe Simantov <hi@moshesimantov.com> (http://www.moshesimantov.com)",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-import-resolver-node": "^0.3.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-prettier": "^2.1.2",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.0.2",
+    "mocha": "^3.4.2",
+    "mocha-eslint": "^3.0.1",
+    "prettier": "^1.5.3"
+  }
+}
