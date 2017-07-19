@@ -20,10 +20,6 @@
       "git add"
     ]
   },
-  "prettier": {
-    "singleQuote": true,
-    "trailingComma": "all"
-  },
   "author": "Moshe Simantov <hi@moshesimantov.com> (http://www.moshesimantov.com)",
   "license": "UNLICENSED",
   "devDependencies": {
