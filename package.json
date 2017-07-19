@@ -5,7 +5,8 @@
   "description": "This is a private project",
   "main": "index.js",
   "scripts": {
-    "precommit": "lint-staged && npm test",
+    "precommit": "lint-staged",
+    "prepush": "npm test",
     "test": "./node_modules/.bin/mocha"
   },
   "lint-staged": {
